@@ -5,7 +5,7 @@ import './Error.css'
 const Error404 = () => {
   return (
     <div className='error-wrapper'>
-        <Image  src='https://mountaineeringscotland.justgo.com/ErrorPages/img/404-light.gif'/>
+        <Image  src='https://mountaineeringscotland.justgo.com/ErrorPages/img/404-dark.gif'/>
     </div>
   )
 }
