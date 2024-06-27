@@ -1,37 +1,97 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@400;600&family=Vollkorn:ital@1&display=swap'); */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&family=Poppins:wght@400;600&family=Vollkorn:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Poppins:wght@400;600&family=Vollkorn:ital@1&display=swap'); */
-
-@import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600&family=Vollkorn:ital@1&display=swap");
-
-body {
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  scrollbar-width: none;
+}
+
+abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
-.app-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+
+
+.App{
+  min-height: 75vh;
 }
-.header-wrapper {
- display: flex;
- flex-direction: column;
- align-items: center;
- width: 100%;
- position: sticky;
- top: 0;
- background-color: white;
- z-index: 9;
+
+input, select {
+  vertical-align: middle;
+  text-rendering: auto;
 }
-.header-container{
-  width: 100%;
-  display: flex;
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  font-family: montserrat, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.col-xs-6 {
+  width: 50%;
+}
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media (max-width: 991px){
+  .App {
+      margin-top: 63px;
+  }
+}
+
+@media (min-width: 991px){
+  .App {
+      margin-top: 85px;
+  }
+
 }
